@@ -1,6 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:site_name" content="Third Man Release Lab">
+    <meta property="og:title" content="Third Man Release Lab">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <title>Third Man Release Lab</title>
+    <link rel="canonical" href="">
+    <meta name="description" content="">
   </head>
   <body>
-    <h1>Third Man Release Lab</h1>
+    <style>
+      body {
+        background-color: #000;
+      }
+      .container {
+        width: 1200px;
+        margin: auto;
+      }
+      #logo {
+        margin:auto;
+        display: block;
+        text-align: center;
+        animation: pulse 4s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+    </style>
+    <div class="container">
+      <img id="logo" src="assets/TMR_GlobeLogoWhite.png" alt="TMR globe logo" width="360">
+    </div>
   </body>
+
+  <script>
+    console.log('Welcome to TMRL');
+  </script>
