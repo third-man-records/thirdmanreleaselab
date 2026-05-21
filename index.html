@@ -13,21 +13,36 @@
     <title>Third Man Release Lab</title>
     <link rel="canonical" href="">
     <meta name="description" content="">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="TMRL" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://use.typekit.net/fjl6llx.css">
   </head>
   <body>
     <style>
       body {
-        background-color: #FFD100;
+        background-color: #ffcd00;
       }
       .container {
         width: 100%;
         margin: auto;
       }
       #logo {
-        margin:auto;
+        margin: auto;
         display: block;
         text-align: center;
-        animation: pulse 4s ease-in-out infinite;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 30px;
+        padding: 15px;
+        box-sizing: border-box;
+        img {
+          width: 100%;
+        }
       }
       @keyframes pulse {
         0% {
@@ -40,9 +55,59 @@
           opacity: 0.2;
         }
       }
+      input, button {
+        width: 300px !important;
+        margin: auto !important;
+      }
+      .content {
+        margin: auto;
+        margin-bottom: 0px;
+        font-size: 20px;
+        padding: 25px;
+        padding-bottom: 0px;
+        max-width: 500px;
+      }
+      p {
+        font-family: "benton-modern-display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      #footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        padding-bottom: 5px;
+          p {
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+            margin: auto;
+            text-align: center;
+            font-size: 11px;
+          }
+      }
     </style>
     <div class="container">
       <script type="text/javascript" async="" src="https://static.klaviyo.com/onsite/js/UmkA25/klaviyo.js"></script>
+      <div id="logo">
+        <img src="assets/TM_RL_logo_wide_date_white_crop.png">
+      </div>
+      <div class="content">
+        <p>
+          A free, two-part series exploring our creative approach to record releases.
+        </p>
+        <p>
+          On June 8th, we'll cover distribution, direct-to-fan communication, mail order, and unconventional release strategies.
+        </p>
+        <p>
+          On June 9th, we'll look at the rollout behind Jack White's 2024 album, No Name, as a real-world case study.
+        </p>
+        <p>
+          Whether you're an artist, independent label, or simply interested in the mechanics of the music industry, this series offers something for everyone interested in how modern release campaigns take shape.
+        </p>
+        <p>
+          Register now for more information!
+        </p>
+      </div>
       <div class="klaviyo-form-U8Mpsw"></div>
+      <div id="footer"><p>&#169; 2026 Third Man Records</p></div>
     </div>
   </body>
