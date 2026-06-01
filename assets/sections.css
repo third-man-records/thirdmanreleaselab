@@ -15,8 +15,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+p.line {
+  margin: 0px 0px 2px 0px;
+}
+
 .header {
-  background-color: #ffd200;
+  background-color: #ffcd00;
   padding: 35px;
   display: flex;
   justify-content: center;
@@ -29,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 section {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 .container {
@@ -62,16 +66,16 @@ section {
 }
 
 .bg-yellow {
-  background-color: #ffd200;
+  background-color: #ffcd00;
   color: black;
 }
 
 .dots {
   background-image: 
-    radial-gradient(rgb(0, 0, 0) 20%, transparent 20%),
-    radial-gradient(rgb(0, 0, 0) 20%, transparent 20%);
-  background-position: 0px 0px, 56px 56px;
-  background-size: 112px 112px;
+    radial-gradient(rgb(0, 0, 0) 18.4%, transparent 18.4%),
+    radial-gradient(rgb(0, 0, 0) 18.4%, transparent 18.4%);
+  background-position: 0px 0px, 20px 20px;
+  background-size: 40px 40px;
   background-color: rgb(255, 255, 255);
   animation: dots-size 1s linear infinite;
   animation-play-state: paused;
@@ -82,8 +86,11 @@ section {
 
 @keyframes dots-size {
   to {
-    background-position: 0px 0px, 20px 20px;
-    background-size: 40px 40px;
+    background-image: 
+      radial-gradient(rgb(0, 0, 0) 12.8%, transparent 12.8%),
+      radial-gradient(rgb(0, 0, 0) 12.8%, transparent 12.8%);
+    background-position: 0px 0px, 8px 8px;
+    background-size: 16px 16px;
   }
 }
 
@@ -152,6 +159,31 @@ section {
 p.nameplate {
   margin-top: 5px;
   font-weight: 600;
+}
+
+/*.cloud-wrap {
+  width: 300px;
+  height: 10px;
+  position: relative;
+  > .first {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  > .second {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+  }
+  > .third {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+  }
+}*/
+
+.cloud {
+  font-size: 30px;
 }
 
 @keyframes spin {

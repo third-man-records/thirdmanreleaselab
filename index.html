@@ -21,6 +21,9 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="https://use.typekit.net/fjl6llx.css">
     <link rel="stylesheet" href="assets/sections.css">
+    <script src="assets/gsap-public/minified/gsap.min.js"></script>
+    <script src="assets/gsap-public/minified/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" async="" src="https://static.klaviyo.com/onsite/js/UmkA25/klaviyo.js"></script>
   </head>
   <body>
     
@@ -29,33 +32,48 @@
     </div>
 
     <section class="dots">
-      <div class="container bg-black">
-        <p>Releasing music in 2026 can feel<br>
-        harder than ever to navigate.</p>
-        <p>Join us for the Third Man Release Lab,</br>
-          an online series in two parts, exploring<br>
-          our creative approach to record releases.</p>
-          
-          <div class="video-container">
+      <div class="container bg-black" id="intro">
+        
+        <div id="intro-content">
+          <div style="margin-bottom: 20px;">
+            <p class="line">Releasing music in 2026 can feel</p>
+            <p class="line">harder than ever to navigate.</p>
+            <br><br>
+            <p class="line">Join us for the Third Man Release Lab,</p>
+            <p class="line">an online series in two parts, exploring</p>
+            <p class="line">our creative approach to record releases.</p>
+          </div>
+            
+          <div class="video-container line">
             <iframe id="ytplayer" type="text/html"
             src="https://www.youtube.com/embed/4sKVnHS3XNk"
             frameborder="0" allowfullscreen></iframe>
           </div>
+        </div>
 
       </div>
     </section>
 
-    <section class="ouchi">
-      <div class="container bg-yellow">
-        <h1>JUNE 8</h1>
+    <section class="ouchi" id="dates">
+      <div class="container bg-yellow" id="datesContent">
+        <h1 class="date" id="date-1">JUNE 8</h1>
         <p>We'll cover distribution, direct-to-fan communication, mail order,<br>
           and unconventional release strategies.</p>
-        [ dots gif here ]
-        <h1>JUNE 9</h1>
+        
+        <div class="ternus" style="margin-top: 40px;">
+          <img src="assets/img/ternus-dots.gif" width="200">
+        </div>
+
+        <h1 class="date" id="date-2">JUNE 9</h1>
         <p style="margin-bottom:60px;">We'll look at the rollout behind Jack White's 2024 album, No Name,<br>
         as a real-world case study.</p>
-        <div style="display: flex; justify-content: center;">
+        <div style="display: flex; justify-content: center; margin-bottom: 40px;">
           <div class="ouchi-inset" id="spinner"></div>
+        </div>
+
+        <p style="margin-bottom: 0px;">Register below for more information and event updates.</p>
+        <div class="form-wrap" style="max-width:500px;margin:auto;">
+          <div class="klaviyo-form-U8Mpsw"></div>
         </div>
       </div>
     </section>
@@ -66,57 +84,93 @@
         <div class="portrait-grid">
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="assets/img/Swank.jpg">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Ben Swank</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="assets/img/Blackwell.jpg">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Ben Blackwell</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="assets/img/Morgan.jpg">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Morgan Perry</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Dave Buick</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="assets/img/Jordan.jpg">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Jordan Williams</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="assets/img/Carlos.jpg">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Carlos Ortiz</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Roe Peterhans</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="assets/img/Katie.jpg">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Katie Domschke</p>
         </div>
         <div class="portrait-wrap">
           <div class="portrait-circle">
-            <img src="assets/img/ljookvhfvUQ0w.webp">
+            <img src="assets/img/SarahG.jpg">
           </div>
-          <p class="nameplate">Jack Nicholson</p>
+          <p class="nameplate">Sarah Goldstein</p>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-circle">
+            <img src="">
+          </div>
+          <p class="nameplate">Camille Augarde</p>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-circle">
+            <img src="assets/img/SarahS.jpg">
+          </div>
+          <p class="nameplate">Sarah Stawski</p>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-circle">
+            <img src="assets/img/Anna.jpg">
+          </div>
+          <p class="nameplate">Anna Brabant</p>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-circle">
+            <img src="assets/img/Mitch.jpg">
+          </div>
+          <p class="nameplate">Mitch Daniels</p>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-circle">
+            <img src="">
+          </div>
+          <p class="nameplate">––</p>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-circle">
+            <img src="assets/img/Cait.jpg">
+          </div>
+          <p class="nameplate">Cait</p>
         </div>
       </div>
       </div>
@@ -124,7 +178,15 @@
 
     <section class="">
       <div class="container bg-black">
-        <p>[animated words here]</p>
+        <p style="margin-bottom: 0px">The music industry is</p>
+        <div class="cloud-wrap">
+          <span class="cloud first">growing</span>
+          <span class="cloud second">changing</span>
+          <span class="cloud third">evolving</span>
+          <span class="cloud first">confusing</span>
+          <span class="cloud second">interesting</span>
+          <span class="cloud third">weird</span>
+        </div>
       </div>
     </section>
 
@@ -133,9 +195,68 @@
         document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
       }, false);
 
-      const spinner = document.getElementById('spinner');
-      spinner.addEventListener('click',(e) => {
-        spinner.style.animation = 'spin 2s linear infinite;'
+      document.addEventListener("DOMContentLoaded", (event) => {
+
+        gsap.from(".line", {
+          y: 30, opacity: 0,
+          stagger: 0.2, duration: 0.6,
+          ease: "power2.out"
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from("#date-1", {
+          scrollTrigger: "#date-1",
+          x: 200,
+          opacity: 0, stagger: 0.25,
+          duration: 0.8, ease: "power3.out"
+        });
+        gsap.from("#date-2", {
+          scrollTrigger: "#date-2",
+          x: -200,
+          opacity: 0, stagger: 0.25,
+          duration: 0.8, ease: "power3.out"
+        });
+
+        const portraits = gsap.utils.toArray('.portrait-circle');
+        gsap.from(portraits, {
+          scrollTrigger: ".portrait-grid",
+          x: (i) => i % 2 === 0 ? -200 : 200,
+          opacity: 0, stagger: 0.25,
+          duration: 0.8, ease: "power3.out"
+        });
+
+        const cloudWords = gsap.utils.toArray('.cloud');
+        const tl = gsap.timeline({ repeat: -1, repeatRefresh: true });
+        tl.set(cloudWords, { color: "random([#ffd200, #ffffff])" });
+        tl.fromTo(cloudWords, 
+          { 
+          opacity: 0,
+          scale: 0.95,
+          filter: "blur(0px)",
+          },
+          {
+          opacity: 1,
+          filter: "blur:(0px)",
+          scale: 1,
+          stagger: {
+            each: 0.333,
+            from: "random"
+          },
+          duration: .5,
+          ease: "power2.out"
+        });
+        tl.to(cloudWords, {
+          opacity: 0,
+          scale: 0.95,
+          filter: "blur:(8px)",
+          stagger: {
+            each: 0.333,
+            from: "random"
+          },
+          duration: .5,
+          ease: "power2.out"
+        });
+
       });
     </script>
 
