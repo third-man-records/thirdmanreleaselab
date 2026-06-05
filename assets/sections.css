@@ -115,6 +115,7 @@ section {
   display: grid;
   place-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 .ouchi-inset::before {
@@ -125,6 +126,17 @@ section {
   background: inherit;
   border-radius: 50%;
   animation: spin 5s linear infinite;
+}
+
+.ouchi-inset::after {
+  content: "";
+  display: block;
+  width: calc(var(--x) / 1.5);
+  aspect-ratio: 1;
+  position: absolute;
+  top: 107px;
+  background-color: #000;
+  border-radius: 50%;
 }
 
 .portrait-grid {
