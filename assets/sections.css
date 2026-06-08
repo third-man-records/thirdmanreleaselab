@@ -106,11 +106,11 @@ section {
 }
 
 .ouchi-inset {
-  --x: 130px;
+  --x: 50px;
   --y: calc(var(--x) / 4);
   background: repeating-conic-gradient(#fff 0 25%, #000 0 50%) 0 0 / var(--x) var(--y);
   margin: 0;
-  min-height: 300px;
+  height: 300px;
   width: 300px;
   display: grid;
   place-items: center;
@@ -121,22 +121,11 @@ section {
 .ouchi-inset::before {
   content: "";
   display: block;
-  width: calc(var(--x) * 2);
+  width: calc(var(--x) * 2.45);
   aspect-ratio: 1;
   background: inherit;
   border-radius: 50%;
   animation: spin 5s linear infinite;
-}
-
-.ouchi-inset::after {
-  content: "";
-  display: block;
-  width: calc(var(--x) / 1.5);
-  aspect-ratio: 1;
-  position: absolute;
-  top: 107px;
-  background-color: #000;
-  border-radius: 50%;
 }
 
 .portrait-grid {
